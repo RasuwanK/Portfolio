@@ -1,0 +1,70 @@
+/* Conditional styles */
+
+/* Medium size */
+@media only screen and (max-width: 1080px) {
+  #intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #left {
+    order: 2;
+  }
+
+  /* Changing order to make the image appear at the top */
+  #right {
+    order: 1;
+  }
+
+  #left h1 {
+    justify-content: center;
+  }
+
+  #left h2 {
+    justify-content: center;
+  }
+
+  #menu {
+    width: 80%;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+}
+
+/* Small size */
+@media only screen and (max-width: 600px) {
+  #left h2 {
+    font-size: 20px;
+    flex-direction: column;
+  }
+
+  #menu {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, 4);
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+
+  #copyright {
+    font-size: 10px;
+  }
+
+  #profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+}

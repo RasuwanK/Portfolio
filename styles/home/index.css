@@ -1,0 +1,58 @@
+/* Styles for html elements */
+#intro {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;  
+  padding: 20px 5px 20px 5px;
+  align-items: center;
+  color: white;
+}
+
+#left h1 {
+  margin: 0;
+  font-size: calc(30px + 3vw);
+  padding: 0;
+  font-family: "Poppins-Bold";
+}
+
+#left h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: calc(20px + 1vw);
+  font-family: "IBM-Plex-Regular";
+}
+
+#left h3 {
+  margin: 0;
+  font-size: calc(10px + 0.5vw);
+  font-family: "Poppins-Light";
+  color: var(--grey);
+}
+
+#profile-pic {
+  object-fit: cover;
+  object-position: top center;
+  width: calc(200px + 1vw);
+  height: calc(200px + 1vw);
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+#menu {
+  display: grid;
+  list-style-type: none;
+  width: 60%;
+  padding: 0;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1f 1fr;
+  gap: 10px;
+}
+
+#menu li {
+  height: 100%;
+  width: 100%;
+}

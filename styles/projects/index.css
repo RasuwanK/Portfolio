@@ -1,0 +1,26 @@
+#project-list {
+	list-style-type: none;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(3, calc(250px + 1vw));
+	gap: 10px;
+}
+
+#project-list video {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.card > h2 {
+	justify-content: center;
+	text-align: center;
+}
+
+#icon-list {
+	list-style-type: none ;
+	padding: 0;
+}
+
+main {
+	gap:10px;
+}

@@ -1,0 +1,9 @@
+#about-me {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+#about-me header h1 {
+	text-align: center;
+}

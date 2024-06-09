@@ -1,0 +1,12 @@
+@media only screen and (max-width: 850px) {
+	#project-list {
+		grid-template-columns: repeat(2, calc(200px + 1vw));
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#project-list {
+		grid-template-columns: 1fr;
+		padding: 10px 10px;
+	}
+}

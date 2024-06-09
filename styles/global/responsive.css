@@ -1,0 +1,23 @@
+/* Conditional styles */
+
+/* Medium size */
+@media only screen and (max-width: 1080px) {
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+}
+
+/* Small size */
+@media only screen and (max-width: 600px) {
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 10px;
+  }
+}

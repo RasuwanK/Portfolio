@@ -1,0 +1,181 @@
+:root {
+  /* Colors */
+  --black-400: #000000;
+  --black-200: #191919;
+  --black-100: #232323;
+  --black-50: #272727;
+  --grey: #bbbbbb;
+  --dark-white: #626262;
+  --dark-grey: #454545;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom fonts */
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "IBM-Plex-Regular";
+  src: url("/fonts/IBMPlexMono-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  color: white;
+  background: rgb(0, 0, 0);
+  min-height: 100vh;
+  background: linear-gradient(
+    155deg,
+    rgba(0, 0, 0, 1) 9%,
+    rgba(25, 25, 26, 1) 80%
+  );
+  font-family: "Poppins-Regular";
+
+  /* Flexbox settings */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: calc(30px + 1vw);
+  text-align: center;
+  padding: 10px 10px;
+}
+
+h2 {
+  font-size: calc(15px + 1vw);
+}
+
+h3 {
+  margin: 0;
+  font-family: "IBM-Plex-Regular";
+  font-weight: 300;
+  font-size: calc(12px + 0.5vw);
+}
+
+p {
+  font-size: calc(10px + 0.5vw);
+}
+
+a {
+  color: var(--grey);
+}
+
+a:visited {
+  color: var(--dark-white);
+}
+
+.icon {
+  width: calc(20px + 0.5vw);
+}
+
+.large-icon {
+  width: calc(40px + 0.5vw);
+}
+
+#copyright {
+  font-size: calc(10px + 0.08vw);
+  text-align: center;
+  color: var(--grey);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  border-radius: 7px;
+  background: linear-gradient(90deg, var(--black-100) 0%, var(--black-50) 100%);
+  background-color: var(--black-100);
+  text-decoration: none;
+  border: 1px solid var(--dark-grey);
+  color: white;
+  transition: background-color 700ms linear;
+}
+
+.card:hover {
+  background: #303030;
+}
+
+.card p {
+  font-size: calc(12px + 0.1vw);
+  color: var(--grey);
+}
+
+.card:visited {
+  color: white;
+}
+
+.card h2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: calc(20px + 1vw);
+  font-weight: normal;
+  margin: 0;
+  font-family: "IBM-Plex-Regular";
+}
+
+.text-box {
+  background-color: #212121;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  color: white;
+  border: 0;
+}
+
+.text-box:focus {
+  border: 1.5px solid #a1a1a1;
+}
+
+.text-box::placeholder {
+  color: #a1a1a1;
+}
+
+button {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px 10px 15px;
+  font-size: 15px;
+  color: var(--black-400);
+}
+
+button:hover {
+  cursor: pointer;
+}
